@@ -1,0 +1,394 @@
+.warp{
+	width:1200px;
+	position:relative;
+	margin: 0 auto;
+	height: 100%;
+}
+
+/*导航*/
+.header{
+	height: 60px;
+	line-height: 60px;
+	min-width: 1200px;
+	background: rgba(255,255,255,0.2);
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+.header.active{
+	background: rgba(0,0,0,0.5);
+}
+.headnav,.foot{
+	width: 75%;
+	/*height: 100%;*/
+	margin: 0 auto;
+}
+@media only screen and (max-width: 1366px){
+	.headnav,.foot{
+	width: 90%;
+	/*height: 100%;*/
+	margin: 0 auto;
+}
+}
+.logo span{
+	font-size: 39px;
+	color: #fff;
+	font-weight: bold;
+}
+.nav{
+	margin-left: 13%;
+}
+.nav ul li{
+	display: inline-block;
+	font-size: 16px;
+	width: 85px;
+    text-align: center;
+    margin-left: 15px;
+}
+.nav ul li.active a{
+	/*color: red;*/
+	border-bottom: 2px solid #FFF;
+}
+.nav ul li a{
+	color: #fff;
+	display: inline-block;
+	width: 100%;
+	line-height: 40px;
+}
+
+.purchase a{
+	color: #fff;
+	font-size: 16px;
+	background: url(../img/mai.png)no-repeat left center;
+	padding-left: 40px;
+	line-height: 40px;
+	display: inline-block;
+}
+.purchase a:hover{
+	background: url(../img/maia.png)no-repeat left center;
+}
+.banner{
+	background: url(../img/banner.png) center center no-repeat fixed;
+	background-size: cover !important;
+	width: 100%;
+	overflow: hidden;
+	min-width: 1200px;
+}
+.carousel-indicators li{
+	width: 60px;
+	height: 6px;
+}
+.carousel-indicators li.active{
+	width: 60px;
+	height: 6px;
+	border: 1px solid #fff;
+}
+.item{
+	width: 100%;
+}
+.item img{
+	width: 100%;
+	min-width: 1200px;
+}
+.bannerText{
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+.bannerText .warpText{
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;
+	text-align: center;
+}
+.bannerText .warpText h1{
+	font-size: 66px;
+}
+.bannerText .warpText p{
+	font-size: 75px;
+	margin-top: 75px;
+}
+.pageCon{
+	width: 33.33%;
+	text-align: center;
+	
+}
+.pageCon img{
+	width: 90px;
+	height: 90px;
+	margin: 0 auto;
+}
+
+.pageCon .imga{
+	display: none;
+}
+.pageCon.active .imga{
+	display: block;
+}
+.pageCon.active .img{
+	display: none;
+}
+.pageCon h2{
+	font-size: 22px;
+	line-height: 50px;
+	margin-top: 30px;
+	color: #212020;
+}
+.pageCon p{
+	font-size: 16px;
+	color: #212020;
+}
+
+.title{
+	font-size: 35px;
+	color: #212020;
+	text-align: center;
+	/*line-height: 200px;*/
+	margin-top: 160px;
+	margin-bottom: 100px;
+}
+
+.proBox{
+	width: 390px;
+	height: 390px;
+	overflow: hidden;
+	float: left;
+	border: 1px solid #CCCCCC;
+}
+.proBox img{
+	width: 390px;
+	height: 390px;
+	transition: all .8s;
+    -moz-transition: all .8s;
+    -webkit-transition: all .8s;
+    cursor: pointer;
+}
+
+.proBox img:hover{
+	transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+}
+.mt15{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.mt13{
+	margin-top: 13px;
+}
+.brief{
+	width: 100%;
+	height: auto;
+	background: #142B33;
+	margin-top: 184px;
+	padding-bottom: 92px;
+	height: 950px;
+	min-width: 1200px;
+}
+.brief .title{
+	color: #fff;
+	line-height: 80px;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+.briefText{
+	color: #fff;
+	font-size: 18px;
+	line-height: 180%;
+	text-align: center;
+}
+.briefCon{
+	margin-top: 90px;
+}
+.briefCon .bdList{
+	display: none;
+}
+.briefCon .bdList.active{
+	display: block;
+}
+.hd span{
+	display: inline-block;
+	text-align: center;
+	background: url(../img/bref.png)no-repeat;
+	color: #fff;
+	font-size: 22px;
+	width: 130px;
+	height: 69px;
+	line-height: 79px;
+	float: left;
+	cursor: pointer;
+	margin-bottom: -15px;
+}
+.hd span.active{
+	background: url(../img/brefAct.png) no-repeat;
+	width: 156px;
+	height: 79px;
+}
+.bd{
+	border: 2px solid #4B6F7A;
+	background: #000;
+	width: 100%;
+	height: 600px;
+}
+.bdList{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	
+	overflow: hidden;
+}
+.bdList .bgImg{
+	margin-top: 48px;
+	
+	height: 504px;
+	width: 1024px;
+}
+.bdList .hoveImg{
+	margin-top: 48px;
+	height: 504px;
+	width: 1024px;
+	background: #142B33;
+	margin: 0 auto;
+	line-height: 504px;
+	text-align: left;
+	padding-left: 50px;
+	transition: all .8s;
+    -moz-transition: all .8s;
+    -webkit-transition: all .8s;
+}
+
+.bgText{
+	position: absolute;
+	right: 0px;
+	width: 485px;
+	transition: all .8s;
+    -moz-transition: all .8s;
+    -webkit-transition: all .8s;
+    height: 100%;
+    /*overflow: hidden;*/
+    background:rgba(75,111,122,0.5);
+    top: 0;
+    text-align: center;
+    z-index: 888;
+}
+.hoveImg .pin{
+	position: absolute;
+    top: 42.88%;
+    margin-left: 92px;
+    z-index: 900;
+}
+.hove{
+	width: 100%;
+	height: 100%;
+}
+.bgText.active{
+	right: -485px;
+}
+.bgText p{
+	color: #fff;
+	font-size: 16px;
+	line-height: 200%;
+	width: 338px;
+	text-align: left;
+	text-indent: 2em;
+	margin: 0 auto;
+	margin-top: 88px;
+}
+#partner .title{
+	/*line-height: 100px;*/
+	margin-bottom: 0;
+}
+.relation .title{
+	/*margin-top: 60px;*/
+}
+.bgText .conImg{
+	width: 88px;
+	height: 88px;
+	margin-top: 100px;
+}
+
+.relCon .Right,.relCon .Left{
+	width: 50%;
+}
+#allmap{
+	width: 100%;
+	height: 480px;
+	border: 1px solid #CCCCCC;
+}
+.relCon .Right{
+	background: #142B33;
+	height: 480px;
+	color: #fff;
+}
+.relCon .Right h2{
+	font-size: 23px;
+	margin-bottom: 50px;
+	letter-spacing: 0.05em;
+}
+.relCon .Right p{
+	font-size: 18px;
+	margin-bottom: 20px;
+	line-height: 50px;
+}
+.relCon .Right .tel{
+	background: url(../img/tel.png) no-repeat left center;
+	padding-left: 50px;
+}
+.relCon .Right .mea{
+	background: url(../img/mea.png) no-repeat left center;
+	padding-left: 50px;
+}
+.relCon .Right .dress{
+	background: url(../img/dress.png) no-repeat left top;
+	padding-left: 50px;
+}
+.relCon .Right .w276{
+	width: 450px;
+	margin: 0 auto;
+	margin-top: 115px;
+}
+.footer{
+	height: 224px;
+	width: 100%;
+	background: #151515;
+	min-width: 1200px;
+	margin-top: 80px;
+}
+.foot .Right{
+	padding-right: 150px;
+}
+.foot .Right ul{
+	float: left;
+	margin-right: 110px;
+	margin-top: 25px;
+}
+.foot .Right ul li{
+	color: #fff;
+	font-size: 14px;
+	line-height: 35px;
+}
+.foot .Right ul li a{
+	color: #fff;
+}
+.beizhu {
+	width: 100%;
+	border-top: 1px solid #fff;
+	text-align: center;
+	font-size: 12px;
+	line-height: 30px;
+	color: #fff;
+	margin-top: 25px;
+}
+.beizhu a{
+	color: #fff;
+}
+.carousel-indicators{
+	bottom: 30px;
+}
+.container-fluid{
+	padding: 0;
+}
